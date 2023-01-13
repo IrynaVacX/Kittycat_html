@@ -1,0 +1,106 @@
+.next5
+{
+    position: relative;
+    display: block;
+    height: 1500px;
+    background-color: white;
+}
+.next-container5
+{
+    position: absolute;
+    top: calc(50% - 41.5%);
+    left: calc(50% - 30%);
+    height: 83%;
+    width: 60%;
+    min-width: 500px;
+}
+.next-title5
+{
+    font-size: 46pt;
+    font-weight: 600;
+    font-family: var(--font1);
+    color: var(--color-dark-gray);
+    text-align: center;
+}
+.next-text5
+{
+    margin-top: 20px;
+    font-size: 14pt;
+    font-family: var(--font2);
+    color: var(--color-dark-gray);
+    text-align: center;
+}
+.next5-container
+{
+    position: relative;
+    margin-top: 60px;
+    height: 100%;
+    width: 100%;
+}
+.nc5-el-pic-c
+{
+    display: flex;
+    position: relative;
+    height: 350px;
+    width: 100%;
+}
+.nc5-el
+{
+    position: relative;
+    margin: 1.5%;
+    height: 90%;
+    width: 33.33%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    box-shadow: 0px 0px 7px rgba(175, 175, 175, 0.2);
+    transition: transform 0.25s;
+}
+.nc5-el:hover
+{
+    transform: scale(1.1);
+}
+.nc5-pic1 { background-image: url(../images/im-c5/nc5-el-pic1.png); }
+.nc5-pic2 { background-image: url(../images/im-c5/nc5-el-pic2.png); }
+.nc5-pic3 { background-image: url(../images/im-c5/nc5-el-pic3.png); }
+.nc5-pic4 { background-image: url(../images/im-c5/nc5-el-pic4.png); }
+.nc5-pic5 { background-image: url(../images/im-c5/nc5-el-pic5.png); }
+.nc5-pic6 { background-image: url(../images/im-c5/nc5-el-pic6.png); }
+.nc5-pic7 { background-image: url(../images/im-c5/nc5-el-pic7.png); }
+.nc5-pic8 { background-image: url(../images/im-c5/nc5-el-pic8.png); }
+.nc5-pic9 { background-image: url(../images/im-c5/nc5-el-pic9.png); }
+
+
+@media screen and (max-width: 840px)
+{
+    .next-container5 { left: calc(50% - 250px); }
+}
+@media screen and (max-width: 1700px)
+{
+    .nc5-el-pic-c
+    {
+        height: 300px;
+        transition: transform 1.2s;
+        transform: scale(0.95);
+    }
+    .next5 { height: 1400px; }
+}
+@media screen and (max-width: 1500px)
+{
+    .nc5-el-pic-c
+    {
+        height: 250px;
+        transition: transform 1.2s;
+        transform: scale(0.9);
+    }
+    .next5 { height: 1200px; }
+}
+@media screen and (max-width: 900px)
+{
+    .nc5-el-pic-c
+    {
+        height: 200px;
+        transition: transform 1.2s;
+        transform: scale(0.85);
+    }
+    .next5 { height: 900px; }
+}

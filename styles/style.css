@@ -1,1 +1,180 @@
+body
+{
+    padding: 0;
+    margin: 0;
+}
+::selection
+{
+    color: rgba(211, 186, 156, 0.5);
+}
+.benefits
+{
+    overflow-y: scroll;
+}
+.benefits::-webkit-scrollbar
+{
+    width: 10px;
+    background-color: var(--color-dark-gray);
+    border-radius: 2px;
+    height: 10px;
+}
+.benefits::-webkit-scrollbar-thumb
+{
+    background: var(--color-light-gray);
+    border-radius: 2px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+:root
+{
+    --font-logo: 'Ms Madi', cursive;
+    --font-deco-1: 'Kaushan Script', cursive;
+    --font0: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --font1: 'Times New Roman', Times, serif;
+    --font2: Verdana, Geneva, Tahoma, sans-serif;
+
+    --color-light-gray: rgb(243, 243, 243);
+    --color-dark-gray:  rgb(49,49,49);
+    --color-dark-light-gray:  rgb(117, 117, 117);
+    --color-light-gray-text:  rgb(190, 190, 190);
+    --color-orange: rgb(247, 101, 82);
+}
+
+.shapka
+{
+    padding: 8px;
+    height: 60px;
+    background-color: white;
+}
+.container-alexis
+{
+    position: absolute;
+    left: 20%;
+    font-size: 28pt;
+    font-weight: bold;
+    font-family: var(--font-logo);
+    color: gray;
+}
+a
+{
+    color: var(--color-orange);
+}
+.container-shapka
+{
+    position: absolute;
+    padding: 18px;
+    left: 40.5%;
+}
+.c-shapka
+{
+    display: inline;
+    margin-right: 15px;
+    font-size: 11pt;
+    font-weight: 600;
+    font-family: var(--font0);
+    color: var(--color-dark-gray);
+}
+@media screen and (max-width: 1250px)
+{
+    
+}
+
+
+.next
+{
+    position: relative;
+    display: block;
+    height: 760px;
+}
+.next-pic
+{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/im-c1/pic1.jpg);
+    opacity: 40%;
+    background-position: 40%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.next-container
+{
+    position: absolute;
+    top: calc(50% - 28%);
+    left: calc(50% - 22%);
+    height: 50%;
+    width: 44%;
+    min-width: 500px;
+}
+.next-text
+{
+    font-size: 57pt;
+    font-family: var(--font1);
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+.next-button
+{
+    position: relative;
+    margin-top: 40px;
+    margin-left: calc(50% - 11%);
+    height: 51px;
+    width: 22%;
+    min-width: 11%;
+    background-color: var(--color-orange);
+    border-radius: 50px;
+    border-style: none;
+    font-family: var(--font0);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-weight: 600;
+    font-size: 13pt;
+    padding: 10px;
+    transition: transform 0.25s;
+}
+.next-button:hover
+{
+    background-color: rgb(206, 84, 68);
+    color: rgb(253, 214, 214);
+    transform: scale(1.1);
+}
+.next-pics
+{
+    display: flex;
+    position: relative;
+    margin-top: 60px;
+    width: 100%;
+    height: 120px;
+}
+.cp1
+{
+    position: relative;
+    width: 33.33%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 90%;
+}
+.pic1 { background-image: url(../images/im-c1/c1-pic1.png); }
+.pic2 { background-image: url(../images/im-c1/c1-pic2.png); }
+.pic3 { background-image: url(../images/im-c1/c1-pic3.png); }
+
+@media screen and (max-width: 1600px)
+{
+    .next-text { font-size: 50pt; }
+    .next-button { font-size: 10pt; }
+}
+@media screen and (max-width: 1380px)
+{
+    .next-text { font-size: 42pt; }
+}
+@media screen and (max-width: 1132px)
+{
+    .next-text { font-size: 34pt; }
+}
+@media screen and (max-width: 1130px)
+{
+    .next-container { left: calc(50% - 250px); }
+}
 

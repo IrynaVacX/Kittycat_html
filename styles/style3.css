@@ -1,0 +1,146 @@
+.next3
+{
+    position: relative;
+    display: block;
+    height: 800px;
+    background-color: white;
+}
+.next-container3
+{
+    position: absolute;
+    top: calc(50% - 39%);
+    left: calc(50% - 32%);
+    height: 70%;
+    width: 64%;
+    min-width: 500px;
+}
+.next-title3-1
+{
+    font-size: 18pt;
+    font-family: var(--font-deco-1);
+    color: black;
+    text-align: center;
+}
+.next-title3-2
+{
+    font-size: 24pt;
+    font-weight: bold;
+    font-family: var(--font0);
+    color: black;
+    text-align: center;
+}
+.mini-line-3
+{
+    position: relative;
+    left: calc(50% - 29px);
+    height: 3px;
+    width: 58px;
+    margin-top: 35px;
+    background-color: var(--color-orange);
+}
+.next-text3
+{
+    margin-top: 40px;
+    margin-left: 130px;
+    margin-right: 130px;
+    font-size: 11pt;
+    line-height: 25px;
+    font-weight: 600;
+    font-family: var(--font0);
+    color: var(--color-light-gray-text);
+    text-align: center;
+}
+.next3-container
+{
+    display: flex;
+    position: relative;
+    margin-top: 60px;
+    width: 100%;
+    height: 320px;
+}
+.nc3-el
+{
+    position: relative;
+    margin: 15px;
+    height: 90%;
+    width: 33.33%;
+    min-width: 300px;
+}
+.nc3-pics
+{
+    margin-top: 15px;
+    height: 90%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: transform 0.25s;
+}
+.nc3-pics:hover
+{
+  transform: scale(1.1);
+}
+.nc3-pic1
+{
+    margin-top: 5px;
+    margin-left: -10px;
+    box-shadow: 10px 10px 0px rgb(149,225,212);
+    background-image: url(../images/im-c3/nc3-el-pic1.png);
+}
+.nc3-pic2 { background-image: url(../images/im-c3/nc3-el-pic2.png); }
+.nc3-pic3 { background-image: url(../images/im-c3/nc3-el-pic3.png); }
+
+@media screen and (max-width: 1550px)
+{
+    .nc3-el
+    {
+        transition: transform 1s;
+        transform: scale(0.9);
+    }
+    .nc3-el:hover
+    {
+        transform: scale(1);
+    }
+    .next-container3
+    {
+        animation: 2s anim3-mini-c forwards linear;
+    }
+}
+@media screen and (max-width: 1070px)
+{
+    .nc3-el
+    {
+        height: 250px;
+        width: 350px;
+        left: calc(50% - 175px);
+        transition: transform 1s;
+        transform: scale(0.9);
+        animation: 2s anim3-mini-el forwards linear;
+    }
+    .nc3-el:hover
+    {
+        transform: scale(1);
+    }
+    .next3-container
+    {
+        display: inline;
+    }
+    .next-container3
+    {
+        animation: 2s anim3-mini-c forwards linear;
+    }
+    .next3
+    {
+        height: 1300px;
+    }
+}
+@keyframes anim3-mini-c
+{
+    0% {
+        left: calc(50% - 500px);
+        width: 1000px;
+    }
+    100% {
+        left: calc(50% - 500px);
+        width: 1000px;
+    }
+}
