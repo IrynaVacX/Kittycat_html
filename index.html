@@ -2,6 +2,8 @@
 <html lang="en">
  <head>
     <meta charset="UTF-8">
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+
     <link href="./styles/style.css" rel="stylesheet" type="text/css">
     <link href="./styles/style2.css" rel="stylesheet" type="text/css">
     <link href="./styles/style3.css" rel="stylesheet" type="text/css">
@@ -12,24 +14,31 @@
     
     <link href="https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="./scrpt.js"></script>
+
+
 </head>
 <body style="background-color: black;" class="benefits">
-    <div>
+    <section>
+        <div class="go-up" title="Up" id='ToTop'>⇧</div>
+        <div class="go-down" title="Down" id='OnBottom'>⇩</div>
         <header class="shapka">
             <div class="container-alexis"><a>A</a>lexis</div>
             <div class="container-shapka">
-                <div class="c-shapka">About Us</div>
-                <div class="c-shapka">Our Focus</div>
-                <div class="c-shapka">Portfolio</div>
-                <div class="c-shapka">Our Team</div>
-                <div class="c-shapka">Work Steps</div>
-                <div class="c-shapka">Pricing</div>
-                <div class="c-shapka">Testimonials</div>
-                <div class="c-shapka">Blog</div>
-                <div class="c-shapka">Contact</div>
+                <a href="#nc3" class="c-shapka csh-b scrollto">About Us</a>
+                <a href="#nc2" class="c-shapka csh-b scrollto">Our Focus</a>
+                <a href="#nc5" class="c-shapka csh-b scrollto">Portfolio</a>
+                <a href="#nc6" class="c-shapka csh-b scrollto">Our Team</a>
+                <a href="#nc4" class="c-shapka csh-b scrollto">Work Steps</a>
+                <a href="#" class="c-shapka csh-b scrollto">Pricing</a>
+                <a href="#" class="c-shapka csh-b scrollto">Testimonials</a>
+                <a href="#" class="c-shapka csh-b scrollto">Blog</a>
+                <a href="#nc7" class="c-shapka csh-b scrollto">Contact</a>
             </div>
         </header>
-        <section class="next">
+        <section id="nc" class="next">
             <div class="next-pic"></div>
             <div class="next-container">
                 <div class="next-text">We design things with love and passion.</div>
@@ -41,7 +50,7 @@
                 </div>
             </div>
         </section>
-        <section class="next2">
+        <section id="nc2" class="next2">
             <div class="next-container2">
                 <div class="next-title2">Our Focus.</div>
                 <div class="next-text2">We understand your requirement and provide quality works.</div>
@@ -74,7 +83,7 @@
             </div>
         </section>
         <hr class="line1">
-        <section class="next3">
+        <section id="nc3" class="next3">
             <div class="next-container3">
                 <div class="next-title3-1">What we do</div>
                 <div class="next-title3-2">STORY ABOUT US</div>
@@ -93,7 +102,7 @@
                 </div>
             </div>
         </section>
-        <section class="next4">
+        <section id="nc4" class="next4">
             <div class="next4-pic"></div>
             <div class="next-container4">
                 <div class="next-title4">Explore Our Awesomeness</div>
@@ -101,7 +110,7 @@
                 <div class="next-text4">Click to play the video</div>
             </div>
         </section>
-        <section class="next5">
+        <section id="nc5" class="next5">
             <div class="next-container5">
                 <div class="next-title5">Portfolio.</div>
                 <div class="next-text5">We understand your requirement and provide quality works.</div>
@@ -125,51 +134,81 @@
             </div>
         </section>
         <!--------------!!!!!!!--------------->
-        <section class="next6">
+        <section id="nc6" class="next6">
             <div class="next-container6">
                 <div class="next-title6">Our Team.</div>
                 <div class="next-text6">We understand your requirement and provide quality works.</div>
                 <div class="next6-container">
-                    <div class="nc6-el nc6-el-1">
-                        <div class="nc6-el-pic nc6-pic1"></div>
-                        <div class="nc6-el-title nc6-el-t-1">Michael Schmitt</div>
-                        <div class="nc6-el-text">Founder & CEO</div>
+                    <div class="nc6-el-c">
+                        <div class="nc6-el nc6-el-1">
+                            <div class="nc6-el-pic nc6-pic1"></div>
+                            <div class="nc6-el-title nc6-el-t-1">Michael Schmitt</div>
+                            <div class="nc6-el-text">Founder & CEO</div>
+                        </div>
+                        <div class="nc6-el nc6-el-2">
+                            <div class="nc6-el-pic nc6-pic2"></div>
+                            <div class="nc6-el-title nc6-el-t-2">David Krämer</div>
+                            <div class="nc6-el-text">Lead Developer</div>
+                        </div>
                     </div>
-                    <div class="nc6-el nc6-el-2">
-                        <div class="nc6-el-pic nc6-pic2"></div>
-                        <div class="nc6-el-title nc6-el-t-2">David Krämer</div>
-                        <div class="nc6-el-text">Lead Developer</div>
-                    </div>
-                    <div class="nc6-el nc6-el-3">
-                        <div class="nc6-el-pic nc6-pic3"></div>
-                        <div class="nc6-el-title nc6-el-t-3">Anna Schröder</div>
-                        <div class="nc6-el-text">Designer</div>
-                    </div>
-                    <div class="nc6-el nc6-el-4">
-                        <div class="nc6-el-pic nc6-pic4"></div>
-                        <div class="nc6-el-title nc6-el-t-4">Jason Teichmann</div>
-                        <div class="nc6-el-text">Consultant</div>
+                    <div class="nc6-el-c">
+                        <div class="nc6-el nc6-el-3">
+                            <div class="nc6-el-pic nc6-pic3"></div>
+                            <div class="nc6-el-title nc6-el-t-3">Anna Schröder</div>
+                            <div class="nc6-el-text">Designer</div>
+                        </div>
+                        <div class="nc6-el nc6-el-4">
+                            <div class="nc6-el-pic nc6-pic4"></div>
+                            <div class="nc6-el-title nc6-el-t-4">Jason Teichmann</div>
+                            <div class="nc6-el-text">Consultant</div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="next7">
+        <section id="nc7" class="next7">
             <div class="next7-pic"></div>
             <div class="next-container7">
-                <div class="nc7-el">
-                    <div class="nc7-el-pic nc6-pic-1"></div>
-                    <div class="nc7-el-text"></div>
-                    <div class="nc7-el-title"></div>
-                    <div class="nc7-el-pic2 nc6-pic2-1"></div>
+                <div class="nc7-c">
+                    <div class="nc7-el nc7-el-left">
+                        <div class="nc7-el-pic nc7-pic-1"></div>
+                        <div class="nc7-el-text">12,458+</div>
+                        <div class="nc7-el-title">Projects Completed</div>
+                        <div class="nc7-el-pic2 nc7-pic2-1"></div>
+                    </div>
+                    <div class="nc7-el">
+                        <div class="nc7-el-pic nc7-pic-2"></div>
+                        <div class="nc7-el-text">1,796+</div>
+                        <div class="nc7-el-title">Satisfied Clients</div>
+                        <div class="nc7-el-pic2 nc7-pic2-2"></div>
+                    </div>
+                </div>
+                <div class="nc7-c">
+                    <div class="nc7-el">
+                        <div class="nc7-el-pic nc7-pic-3"></div>
+                        <div class="nc7-el-text">1,000+</div>
+                        <div class="nc7-el-title">Positive Feedbacks</div>
+                        <div class="nc7-el-pic2 nc7-pic2-3"></div>
+                    </div>
+                    <div class="nc7-el nc7-el-right">
+                        <div class="nc7-el-pic nc7-pic-4"></div>
+                        <div class="nc7-el-text">1,500+</div>
+                        <div class="nc7-el-title">Freebies Released</div>
+                        <div class="nc7-el-pic2 nc7-pic2-4"></div>
+                    </div>
                 </div>
             </div>
         </section>
-
-
-
-
-
-
-    </div>
+    </section>
+    <script>
+        jQuery(document).ready(function() {
+        jQuery("a.scrollto").click(function () {
+        elementClick = jQuery(this).attr("href")
+        destination = jQuery(elementClick).offset().top;
+        jQuery("html:not(:animated),body:not(:animated)").animate({scrollTop: destination}, 1100);
+        return false;
+        });
+        });
+    </script>
 </body>
 </html>
