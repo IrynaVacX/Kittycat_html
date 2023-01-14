@@ -2,6 +2,7 @@ body
 {
     padding: 0;
     margin: 0;
+    overflow:  hidden;
 }
 ::selection
 {
@@ -69,11 +70,23 @@ a
 .c-shapka
 {
     display: inline;
+    cursor: pointer;
     margin-right: 15px;
     font-size: 11pt;
     font-weight: 600;
     font-family: var(--font0);
     color: var(--color-dark-gray);
+}
+.csh-b
+{
+    border: none;
+    background: none;
+    text-decoration: none;
+}
+.c-shapka:hover
+{
+    transition: transform 1s;
+    transform: scale(1.1);
 }
 @media screen and (max-width: 1250px)
 {
@@ -178,3 +191,26 @@ a
     .next-container { left: calc(50% - 250px); }
 }
 
+.go-up, .go-down
+{
+    display: none;
+    position: fixed;
+    cursor: pointer;
+    z-index: 999;
+    right: 15px;
+    width: 50px;
+    height: 50px;
+    font-size: 30pt;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    background: var(--color-orange);
+    border-radius: 50px;
+}
+.go-up   { bottom: 75px; }
+.go-down { bottom: 15px; }
+.go-down:hover, .go-up:hover 
+{
+    background: rgb(255, 224, 203);
+    color: var(--color-orange);
+}

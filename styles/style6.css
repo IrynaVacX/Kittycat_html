@@ -38,11 +38,18 @@
     width: 100%;
     height: 360px;
 }
+.nc6-el-c
+{
+    display: flex;
+    position: relative;
+    height: 100%;
+    width: 40%;
+}
 .nc6-el
 {
     position: relative;
     margin: 1%;
-    width: 25%;
+    width: 50%;
     min-width: 185px;
     height: 100%;
     background-color: rgb(255, 255, 255);
@@ -120,6 +127,13 @@
     .next-container6
     {
         animation: 2s anim6-mini-c forwards linear;
+    }
+}
+@media screen and (max-width: 810px)
+{
+    .nc6-el-c
+    {
+        display: inline block;
     }
 }
 @media screen and (max-width: 900px)
