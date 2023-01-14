@@ -56,6 +56,7 @@
     font-weight: 600;
     font-size: 20pt;
     text-decoration-line: none;
+    transform: scale(1.1);
     transition: transform 0.25s;
     animation: 5s anim-zero-button forwards linear;
 }
@@ -63,7 +64,7 @@
 {
     background-color: rgb(206, 84, 68);
     color: rgb(253, 214, 214);
-    transform: scale(1.1);
+    transform: scale(1.5);
 }
 .zero
 {
@@ -132,11 +133,11 @@
 }
 
 
-@media screen and (max-width: 1000px)
+@media screen and (max-width: 900px)
 {
     .zero-title
     {
-        font-size: 100pt;
+        font-size: 70pt;
     }
     .zero-text
     {
