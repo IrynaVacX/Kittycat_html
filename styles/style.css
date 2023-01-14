@@ -246,7 +246,7 @@ a
     display: none;
     opacity: 0;
 }
-@media screen and (max-width: 930px)
+@media only screen and (max-width: 980px)
 {
     .container-shapka
     {
@@ -312,4 +312,5 @@ a
         z-index: 5;
     }
 }
+
 
