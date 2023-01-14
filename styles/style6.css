@@ -43,7 +43,7 @@
     display: flex;
     position: relative;
     height: 100%;
-    width: 40%;
+    width: 50%;
 }
 .nc6-el
 {
@@ -126,7 +126,9 @@
     }
     .next-container6
     {
-        animation: 2s anim6-mini-c forwards linear;
+        left: calc(50% - 400px);
+        width: 800px;
+        /*animation: 2s anim6-mini-c forwards linear;*/
     }
 }
 @media screen and (max-width: 810px)
@@ -168,5 +170,31 @@
     100% {
         left: calc(50% - 560px);
         width: 1120px;
+    }
+}
+
+
+@media screen and (max-width: 900px)
+{
+    .next6
+    {
+        height: 1300px;
+    }
+    .next6-container
+    {
+        width: 600px;
+        left: calc(50% - 300px);
+    }
+    .nc6-el-c
+    {
+        display: inline-block;
+        width: 100%;
+    }
+    .nc6-el
+    {
+        min-width: 250px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 40px;
     }
 }
