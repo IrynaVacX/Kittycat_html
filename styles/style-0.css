@@ -26,6 +26,7 @@
 }
 .zero-title
 {
+    width: 100%;
     font-size: 150pt;
     font-family: var(--font-logo);
     color: rgb(255, 255, 255);
